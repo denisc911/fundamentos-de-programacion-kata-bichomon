@@ -13,7 +13,8 @@ let isFirstTime = true;
 // Función para aplicar el estilo gris al primer encuentro con la clase 'infocard-list.infocard-list-pkmn-lg'
 function applyGreyBackground() {
     // Seleccionar los elementos con la clase 'infocard-list.infocard-list-pkmn-lg'
-    const elements = document.getElementsByClassName('infocard-list infocard-list-pkmn-lg');
+    const background = document.querySelector('.infocard-list');
+    background.style.backgroundColor= ('grey');
     
     // Verificar si se ha encontrado por primera vez y aún no se ha aplicado el estilo gris
     if (isFirstTime) {
